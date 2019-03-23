@@ -1,6 +1,6 @@
 ---
 title: "Navigating Files and Directories"
-teaching: 
+teaching:
 exercises:
 questions:
 - "How can I move around on my computer?"
@@ -103,17 +103,17 @@ More specifically, when we type `whoami` the shell:
 > programs.
 > If you type the name of a program that does not exist and hit enter, you
 > will see an error message similar to this:
-> 
+>
 > ~~~
 > $ mycommand
 > ~~~
 > {: .bash}
-> 
+>
 > ~~~
 > -bash: mycommand: command not found
 > ~~~
 > {: .error}
-> 
+>
 > The Shell (Bash) tells you that it cannot find the program `mycommand`
 > because the program you are trying to run does not exist on your computer.
 > We will touch quite a few commands in the course of this tutorial, but there
@@ -378,7 +378,7 @@ information on how to use the commands or programs.
 > $ ls -j
 > ~~~
 > {: .bash}
-> 
+>
 > ~~~
 > ls: invalid option -- 'j'
 > Try 'ls --help' for more information.
@@ -597,8 +597,8 @@ which means "the current working directory".
 It may seem redundant to have a name for it,
 but we'll see some uses for it soon.
 
-Note that in most command line tools, multiple parameters can be combined 
-with a single `-` and no spaces between the parameters: `ls -F -a` is 
+Note that in most command line tools, multiple parameters can be combined
+with a single `-` and no spaces between the parameters: `ls -F -a` is
 equivalent to `ls -Fa`.
 
 > ## Other Hidden Files
@@ -802,7 +802,7 @@ and we will see it in many other tools as we go on.
 > 8. `cd`
 > 9. `cd ..`
 >
- 
+
 [//]: #  ## Solution
 [//]: #  1. No: `.` stands for the current directory.
 [//]: #  2. No: `/` stands for the root directory.
@@ -814,7 +814,7 @@ and we will see it in many other tools as we go on.
 [//]: #  8. Yes: shortcut to go back to the user's home directory.
 [//]: #  9. Yes: goes up one level.
 > {: .solution}
- 
+
 {: .challenge}
 
 > ## Relative Path Resolution
@@ -829,7 +829,7 @@ and we will see it in many other tools as we go on.
 >
 > ![File System for Challenge Questions](../fig/filesystem-challenge.svg)
 >
- 
+
 [//]: #  ## Solution
 [//]: #  1. No: there *is* a directory `backup` in `/Users`.
 [//]: #  2. No: this is the content of `Users/thing/backup`,
@@ -858,7 +858,7 @@ and we will see it in many other tools as we go on.
 > 3.  `ls -r -F /Users/backup`
 > 4.  Either #2 or #3 above, but not #1.
 >
- 
+
 [//]: #  ## Solution
 [//]: #   1. No: `pwd` is not the name of a directory.
 [//]: #   2. Yes: `ls` without directory argument lists files and directories
@@ -866,7 +866,7 @@ and we will see it in many other tools as we go on.
 [//]: #   3. Yes: uses the absolute path explicitly.
 [//]: #   4. Correct: see explanations above.
 > {: .solution}
- 
+
 {: .challenge}
 
 > ## Exploring More `ls` Arguments
@@ -877,14 +877,14 @@ and we will see it in many other tools as we go on.
 > as file permissions and ownership), but the rest should be useful
 > nevertheless.
 >
- 
+
 [//]: #  ## Solution
-[//]: #  The `-l` arguments makes `ls` use a **l**ong listing format, showing not only
+[//]: #  The `-l` arguments makes `ls` use a \**l**ong listing format, showing not only
 [//]: #  the file/directory names but also additional information such as the file size
 [//]: #  and the time of its last modification. The `-h` argument makes the file size
-[//]: #  "**h**uman readable", i.e. display something like `5.3K` instead of `5369`.
+[//]: #  "\**h**uman readable", i.e. display something like `5.3K` instead of `5369`.
 > {: .solution}
- 
+
 {: .challenge}
 
 > ## Listing Recursively and By Time
@@ -896,10 +896,10 @@ and we will see it in many other tools as we go on.
 > In what order does `ls -R -t` display things? Hint: `ls -l` uses a long listing
 > format to view timestamps.
 >
- 
+
 [//]: #  ## Solution
 [//]: #  The directories are listed alphabetical at each level, the files/directories
 [//]: #  in each directory are sorted by time of last change.
 > {: .solution}
- 
+
 {: .challenge}
