@@ -564,7 +564,6 @@ but it does find the copy in `thesis` that we didn't delete.
 [//]: #  {: .bash}
 [//]: #  Jamie needs to move her files `fructose.dat` and `sucrose.dat` to the `analyzed` directory.
 [//]: #  The shell will expand *.dat to match all .dat files in the current directory.
-[//]: #  The `mv` command then moves the list of .dat files to the "analyzed" directory.
 > {: .solution}
 {: .challenge}
 
@@ -638,24 +637,7 @@ but it does find the copy in `thesis` that we didn't delete.
 >
 > 3.  When might you want to create a file this way?
 >
-[//]: #  ## Solution
-[//]: #  1.  The touch command generates a new file called 'my_file.txt' in
-[//]: #      your home directory.  If you are in your home directory, you
-[//]: #      can observe this newly generated file by typing 'ls' at the
-[//]: #      command line prompt.  'my_file.txt' can also be viewed in your
-[//]: #      GUI file explorer.
-[//]: #
-[//]: #  2.  When you inspect the file with 'ls -l', note that the size of
-[//]: #      'my_file.txt' is 0kb.  In other words, it contains no data.
-[//]: #      If you open 'my_file.txt' using your text editor it is blank.
-[//]: #
-[//]: #  3.  Some programs do not generate output files themselves, but
-[//]: #      instead require that empty files have already been generated.
-[//]: #      When the program is run, it searches for an existing file to
-[//]: #      populate with its output.  The touch command allows you to
-[//]: #      efficiently generate a blank text file to be used by such
-[//]: #      programs.
-> {: .solution}
+
 {: .challenge}
 
 > ## Moving to the Current Folder
@@ -737,19 +719,5 @@ but it does find the copy in `thesis` that we didn't delete.
 > $ rm -r -i 2016-05-20-data/
 > ~~~
 > {: .bash}
-[//]: #
-[//]: #  ## Solution
-[//]: #  The first set of commands achieves this objective.
-[//]: #  First we have a recursive copy of a data folder.
-[//]: #  Then two `rm` commands which remove all files in the specified directories.
-[//]: #  The shell expands the '*' wild card to match all files and subdirectories.
-[//]: #
-[//]: #  The second set of commands have the wrong order:
-[//]: #  attempting to delete files which haven't yet been copied,
-[//]: #  followed by the recursive copy command which would copy them.
-[//]: #
-[//]: #  The third set of commands would achieve the objective, but in a time-consuming way:
-[//]: #  the first command copies the directory recursively, but the second command deletes
-[//]: #  interactively, prompting for confirmation for each file and directory.
-> {: .solution}
+
 {: .challenge}
