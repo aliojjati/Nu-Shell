@@ -879,10 +879,9 @@ and we will see it in many other tools as we go on.
 >
 
 [//]: #  ## Solution
-[//]: #  The `-l` arguments makes `ls` use a \**l**ong listing format, showing not only
+[//]: #  The `-l` arguments makes `ls` use a **l**ong listing format, showing not only
 [//]: #  the file/directory names but also additional information such as the file size
-[//]: #  and the time of its last modification. The `-h` argument makes the file size
-[//]: #  "\**h**uman readable", i.e. display something like `5.3K` instead of `5369`.
+[//]: #  and the time of its last modification. The `-h` argument makes the file size "**h**uman readable", i.e. display something like `5.3K` instead of `5369`.
 > {: .solution}
 
 {: .challenge}

@@ -130,12 +130,12 @@ $ nano draft.txt
 >
 > When we say, "`nano` is a text editor," we really do mean "text": it can
 > only work with plain character data, not tables, images, or any other
-> human-friendly media. We use it in examples because it is one of the 
-> least complex text editors. However, because of this trait, it may 
+> human-friendly media. We use it in examples because it is one of the
+> least complex text editors. However, because of this trait, it may
 > not be powerful enough or flexible enough for the work you need to do
 > after this workshop. On Unix systems (such as Linux and Mac OS X),
 > many programmers use [Emacs](http://www.gnu.org/software/emacs/) or
-> [Vim](http://www.vim.org/) (both of which require more time to learn), 
+> [Vim](http://www.vim.org/) (both of which require more time to learn),
 > or a graphical editor such as
 > [Gedit](http://projects.gnome.org/gedit/). On Windows, you may wish to
 > use [Notepad++](http://notepad-plus-plus.org/).  Windows also has a built-in
@@ -512,9 +512,9 @@ but it does find the copy in `thesis` that we didn't delete.
 [//]: #  The third line makes a copy of the file we just moved.  The tricky part here is where the file was
 [//]: #  copied to.  Recall that `..` means "go up a level", so the copied file is now in `/Users/jamie`.
 [//]: #  Notice that `..` is interpreted with respect to the current working
-[//]: #  directory, **not** with respect to the location of the file being copied.
+[//]: #  directory, not with respect to the location of the file being copied.
 [//]: #  So, the only thing that will show using ls (in `/Users/jamie/data`) is the recombine folder.
-[//]: # 
+[//]: #
 [//]: #  1. No, see explanation above.  `proteins-saved.dat` is located at `/Users/jamie`
 [//]: #  2. Yes
 [//]: #  3. No, see explanation above.  `proteins.dat` is located at `/Users/jamie/data/recombine`
@@ -591,17 +591,17 @@ but it does find the copy in `thesis` that we didn't delete.
 > ~~~
 > {: .output}
 > ~~~
-> $ cp amino-acids.txt animals.txt morse.txt 
+> $ cp amino-acids.txt animals.txt morse.txt
 > ~~~
 > {: .bash}
 >
 [//]: #  ## Solution
-[//]: #  If given more than one file name followed by a directory name (i.e. the destination directory must 
+[//]: #  If given more than one file name followed by a directory name (i.e. the destination directory must
 [//]: #  be the last argument), `cp` copies the files to the named directory.
-[//]: # 
+[//]: #
 [//]: #  If given three file names, `cp` throws an error because it is expecting a directory
 [//]: #  name as the last argument.
-[//]: # 
+[//]: #
 [//]: #  ```
 [//]: #  cp: target ‘morse.txt’ is not a directory
 [//]: #  ```
@@ -641,14 +641,14 @@ but it does find the copy in `thesis` that we didn't delete.
 [//]: #  ## Solution
 [//]: #  1.  The touch command generates a new file called 'my_file.txt' in
 [//]: #      your home directory.  If you are in your home directory, you
-[//]: #      can observe this newly generated file by typing 'ls' at the 
+[//]: #      can observe this newly generated file by typing 'ls' at the
 [//]: #      command line prompt.  'my_file.txt' can also be viewed in your
 [//]: #      GUI file explorer.
-[//]: # 
+[//]: #
 [//]: #  2.  When you inspect the file with 'ls -l', note that the size of
 [//]: #      'my_file.txt' is 0kb.  In other words, it contains no data.
 [//]: #      If you open 'my_file.txt' using your text editor it is blank.
-[//]: # 
+[//]: #
 [//]: #  3.  Some programs do not generate output files themselves, but
 [//]: #      instead require that empty files have already been generated.
 [//]: #      When the program is run, it searches for an existing file to
@@ -698,9 +698,9 @@ but it does find the copy in `thesis` that we didn't delete.
 [//]: #  ```
 [//]: #  $ rm: remove regular file 'thesis/quotations.txt'?
 [//]: #  ```
-[//]: #  {: .bash} 
-[//]: #  The -i option will prompt before every removal. 
-[//]: #  The Unix shell doesn't have a trash bin, so all the files removed will disappear forever. 
+[//]: #  {: .bash}
+[//]: #  The -i option will prompt before every removal.
+[//]: #  The Unix shell doesn't have a trash bin, so all the files removed will disappear forever.
 [//]: #  By using the -i flag, we have the chance to check that we are deleting only the files that we want to remove.
 > {: .solution}
 {: .challenge}
@@ -737,17 +737,17 @@ but it does find the copy in `thesis` that we didn't delete.
 > $ rm -r -i 2016-05-20-data/
 > ~~~
 > {: .bash}
-[//]: # 
+[//]: #
 [//]: #  ## Solution
 [//]: #  The first set of commands achieves this objective.
 [//]: #  First we have a recursive copy of a data folder.
 [//]: #  Then two `rm` commands which remove all files in the specified directories.
 [//]: #  The shell expands the '*' wild card to match all files and subdirectories.
-[//]: # 
-[//]: #  The second set of commands have the wrong order: 
+[//]: #
+[//]: #  The second set of commands have the wrong order:
 [//]: #  attempting to delete files which haven't yet been copied,
 [//]: #  followed by the recursive copy command which would copy them.
-[//]: # 
+[//]: #
 [//]: #  The third set of commands would achieve the objective, but in a time-consuming way:
 [//]: #  the first command copies the directory recursively, but the second command deletes
 [//]: #  interactively, prompting for confirmation for each file and directory.
